@@ -29,12 +29,14 @@ section {
   border-radius: 8px;
   text-transform: uppercase;
   border: none;
+  font-weight: 900;
 }
 .phonelink {
   display: inline-block;
   font-size: 2rem;
   color: text-color;
-  font-weight: 700;
+  font-weight: 900;
   height: 7rem;
   line-height: 7rem;
+  
 }
