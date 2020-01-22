@@ -31,7 +31,7 @@
 }
 
 /* Colors */
-@button-color: #f7ae01;
+@button-color: #feb403;
 @text-color: #1a1820;
 @icon-color: #70c849;
 @light: #fff;
@@ -105,6 +105,7 @@ html{
 			margin-bottom: 3rem;
 			display: block;
 			width: 100%;	
+			outline: none;
 		}
 		button{
 			margin-bottom: 1.5rem;
@@ -147,8 +148,6 @@ html{
 		vertical-align: middle;
 	}
 }
-
-
 .mbutton{
 	font-size: 1.2rem;
 	background-color: @button-color;
@@ -157,6 +156,10 @@ html{
 	border-radius: 8px;
 	text-transform: uppercase;
 	border: none;
+}
+.mbutton:hover{
+ background: linear-gradient(#fdc540, #da9b03);
+ // background-color: green;
 }
 .phonelink{
 	.bold();
@@ -167,6 +170,7 @@ html{
 	line-height: 7rem;	
 }
 
+// Media запросы
 @media (max-width: 991px){
 	.wrap{
 		text-align: center;
