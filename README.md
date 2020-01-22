@@ -7,4 +7,6 @@
 
 [Практика](https://igortaranenko.github.io/Practice/src/ "Практика") - Сайт с макета
 
+[Урок 15](https://igortaranenko.github.io/Less_15/index.html "Урок №15") - Сайт с элементами, реагирующими на наведение
+
 
