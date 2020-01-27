@@ -34,7 +34,7 @@
               <!-- <div class="text-right"> -->
                 <div class="wrap">
                  <div class="wrap-block">
-                  <button class="mbutton">Получить консультацию</button>
+                  <button class="mbutton show-window">Получить консультацию</button>
                  </div>
                 </div>
               <!-- </div> -->
@@ -124,6 +124,35 @@
     </div>
    </section>
 
+
+
+
+  <!-- Всплывающие окна -->
+  <div class="window">
+    <div class="window-dialog">
+      <div class="window-content">
+        <div class="window-close"><button>&times;</button></div>
+         <div class="main-form window-form">
+            <div class="window-header">
+             <h4>Заинтересовало?</h4>
+             <p>Оставьте контактные данные <br>для связи</p>  
+            </div>
+            
+            <form action="#">
+              <div class="inputs">
+               <label for="">Ваше имя</label>
+               <input type="text">
+               <label for="">Номер телефона</label>
+               <input type="text">
+               <label for="">Сообщение</label>
+               <textarea cols="30" rows="7"></textarea>
+              </div>
+              
+              <button class="mbutton center-block window-button">Оставьте заявку</button>
+            </form>
+      </div>
+    </div>
+  </div>
   <!-- Подключение библиотек -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
@@ -131,6 +160,15 @@
   <script src="slick-1.8.1/slick/slick.js"></script>
   <script>
     $(document).ready(function(){
+      $('.show-window').on('click', function(event){
+        event.preventDefault();
+       $('.window').fadeIn();
+      });
+      $('.window-close').on('click', function(event){
+       event.preventDefault();
+       $('.window').fadeOut();
+      });
+      
       $('.advantages-slider').slick({
         infinite: true,
         slidesToShow: 4,
