@@ -236,6 +236,17 @@ html{
 
 // Media запросы
 @media (max-width: 991px){
+	.main{
+		&-form{
+			margin-bottom: 3rem;
+		}
+		margin-bottom: 2rem;
+	}
+	.main-title{
+		h1{
+			font-size: 3rem;
+		}
+	}
 	.wrap{
 		text-align: center;
 	}
@@ -253,6 +264,12 @@ html{
 }
 
 @media (max-width: 767px){
+	.main{
+		&-form{
+			margin-bottom: 2rem;
+		}
+		margin-bottom: 2rem;
+	}
 	.main-title{
 		h1{
 			font-size: 3rem;
@@ -270,8 +287,15 @@ html{
 	}
 	.main{
 	 background-position: top left;	
-	}	
-}
+	}
+	.advantages{
+		&-header{
+			margin-bottom: 3rem;
+		}
+	}
+}	
+	
+
 @media (max-width: 400px){
 	.main-title{
 		h1{
