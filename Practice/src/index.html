@@ -73,12 +73,90 @@
             <p>Приедем в день обращения*</p>
            </div>
           </div>
+          <!-- Конец формы -->
 
         </div> 
-       </main>       
       </div>
-      
-
     </div>    
+   </main> 
+   <!-- Конец главного экрана -->
+
+   <section>
+    <div class="container">
+      <div class="advantages-header">
+       <h2>Преимущества работы с нами</h2> 
+      </div>
+      <div class="advantages-slider">
+
+        <div class="advantage">
+          <div class="advantage-img"><img src="img/advantages/1.png" alt="Платите по факту"></div>
+           <h3>Платите по факту</h3>
+          <div class="advantage-title">
+           <p>Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и промежуточных платежей.</p>  
+          </div>          
+        </div>
+
+        <div class="advantage">
+          <div class="advantage-img"><img src="img/advantages/2.png" alt="Заключаем договор"></div>
+           <h3>Заключаем договор</h3>
+          <div class="advantage-title">
+           <p>Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все обязательства будут выполнены.</p>  
+          </div>          
+        </div>
+
+        <div class="advantage">
+          <div class="advantage-img"><img src="img/advantages/3.png" alt="Точно в срок"></div>
+           <h3>Точно в срок</h3>
+          <div class="advantage-title">
+           <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше</p>
+          </div>
+        </div>
+
+        <div class="advantage">
+          <div class="advantage-img"><img src="img/advantages/4.png" alt="Экономите на материалах"></div>
+           <h3>Экономите на материалах</h3>
+          <div class="advantage-title">
+           <p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru  и даём Вам самые выгодные цены.</p>  
+          </div>          
+        </div>
+
+      </div>
+    </div>
+   </section>
+
+  <!-- Подключение библиотек -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+  <script src="slick-1.8.1/slick/slick.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.advantages-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                prevArrow: '<button class="prevArrow arrow"></button>',
+                nextArrow: '<button class="nextArrow arrow"></button>'
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<button class="prevArrow arrow"></button>',
+                nextArrow: '<button class="nextArrow arrow"></button>'
+              }
+            }
+          ]
+      });
+    });
+  </script>
   </body>
 </html> 

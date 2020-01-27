@@ -3,8 +3,8 @@
     font-family: 'ProximaNovaReg';
     src: url('../fonts/ProximaNova-Regular.eot');
     src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
-        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+         url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+         url('../fonts/ProximaNova-Regular.woff') format('woff'),
         url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
         url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
     font-weight: normal;
@@ -38,16 +38,22 @@
 @green: #7bb442;
 
 /* Basic settings */
+
 html{
 	font-size: 10px;
 	.reg();
 	color: @text-color;
 }
+
 /* Styles */
+
+// Настройка шапки сайта
+
 .main{
  background: #fff url(../img/main-bg.jpg) center center no-repeat;
  background-size: cover;
- 	padding: 3rem 0	;
+ padding: 3rem 0	;
+ margin-bottom: 10rem;
 	&-title	{
 		h1{
 		margin-bottom: 4rem;
@@ -159,7 +165,6 @@ html{
 }
 .mbutton:hover{
  background: linear-gradient(#fdc540, #da9b03);
- // background-color: green;
 }
 .phonelink{
 	.bold();
@@ -169,6 +174,65 @@ html{
 	height: 7rem;
 	line-height: 7rem;	
 }
+
+// Настройка экрана с преимуществами
+
+.advantages{
+ &-header{
+ 	margin-bottom: 8rem;
+		text-align: center;
+		h2{
+			.bold();
+			font-size: 3.6rem;
+		}
+	}		
+}
+.advantage{
+	&-img{
+		margin-bottom: 5rem;
+		img{
+		margin: 0 auto;
+	 }
+	} 
+	text-align: center;
+	h3{
+		font-size: 2rem;
+		.bold();
+	}
+	p{
+		margin-top: 3rem;
+		font-size: 1.5rem;
+	}
+	&-title{
+		margin: 0 auto;
+		text-align: center;
+		width: 85%;
+	}
+}
+.arrow{
+	position: absolute;
+ z-index: 99;
+ width: 3rem;
+ height: 3rem; 
+ border: none;
+ outline: none;
+}
+.prevArrow{
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+ background: url('../img/PrewArr.png')  center no-repeat;
+ background-size: 100%;
+ 
+}
+.nextArrow{
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+ background: url('../img/NextArr.png')  center no-repeat;
+ background-size: 100%;
+}
+
 
 // Media запросы
 @media (max-width: 991px){

@@ -25,6 +25,7 @@ html {
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
   background-size: cover;
   padding: 3rem 0	;
+  margin-bottom: 10rem;
 }
 .main-title h1 {
   margin-bottom: 4rem;
@@ -142,6 +143,60 @@ html {
   color: #1a1820;
   height: 7rem;
   line-height: 7rem;
+}
+.advantages-header {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+.advantages-header h2 {
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 3.6rem;
+}
+.advantage {
+  text-align: center;
+}
+.advantage-img {
+  margin-bottom: 5rem;
+}
+.advantage-img img {
+  margin: 0 auto;
+}
+.advantage h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.advantage p {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+.advantage-title {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+.arrow {
+  position: absolute;
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+}
+.prevArrow {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url('../img/PrewArr.png') center no-repeat;
+  background-size: 100%;
+}
+.nextArrow {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url('../img/NextArr.png') center no-repeat;
+  background-size: 100%;
 }
 @media (max-width: 991px) {
   .wrap {
