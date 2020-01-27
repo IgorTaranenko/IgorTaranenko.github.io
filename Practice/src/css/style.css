@@ -20,6 +20,15 @@ html {
   font-family: 'ProximaNovaReg', sans-serif;
   color: #1a1820;
 }
+html button:focus {
+  outline: none;
+}
+html textarea:focus {
+  outline: none;
+}
+html textarea {
+  border: 1px solid #dddddd;
+}
 /* Styles */
 .main {
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
@@ -150,7 +159,7 @@ html {
 }
 .advantages-header h2 {
   font-family: 'ProximaNovaBold', sans-serif;
-  font-size: 3.6rem;
+  font-size: 3.7rem;
 }
 .advantage {
   text-align: center;
@@ -198,6 +207,53 @@ html {
   background: url('../img/NextArr.png') center no-repeat;
   background-size: 100%;
 }
+.window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.window-form {
+  padding: 0;
+  margin: 0;
+}
+.window-close {
+  position: absolute;
+  text-align: center;
+  top: -1.2rem;
+  right: -3rem;
+}
+.window-close button {
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.window-button {
+  margin-top: 2rem;
+}
+.window-header {
+  margin-bottom: 2rem;
+}
+.window-header h4 {
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.window-content {
+  padding: 2rem 4rem;
+  background-color: #ffffff;
+  position: fixed;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 @media (max-width: 991px) {
   .main {
     margin-bottom: 2rem;
@@ -206,7 +262,7 @@ html {
     margin-bottom: 3rem;
   }
   .main-title h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
   .wrap {
     text-align: center;
@@ -221,6 +277,9 @@ html {
     text-align: center;
     margin-top: -2rem;
   }
+  .advantages-header h2 {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 767px) {
   .main {
@@ -230,7 +289,7 @@ html {
     margin-bottom: 2rem;
   }
   .main-title h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .logo {
     text-align: center;
@@ -248,8 +307,11 @@ html {
   .advantages-header {
     margin-bottom: 3rem;
   }
+  .advantages-header h2 {
+    font-size: 2.6rem;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .main-title h1 {
     font-size: 2.4rem;
   }
