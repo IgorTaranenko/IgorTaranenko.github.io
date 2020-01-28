@@ -153,6 +153,9 @@ html textarea {
   height: 7rem;
   line-height: 7rem;
 }
+.advantages {
+  margin-bottom: 10rem;
+}
 .advantages-header {
   margin-bottom: 8rem;
   text-align: center;
@@ -182,6 +185,70 @@ html textarea {
   margin: 0 auto;
   text-align: center;
   width: 85%;
+}
+.price {
+  padding: 10rem 0;
+  background: url(../img/prices-bg.jpg) center repeat;
+}
+.price-header {
+  color: #ffffff;
+  text-align: center;
+}
+.price-header h2 {
+  margin-bottom: 3rem;
+  font-size: 3.6rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.price-header p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.price img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.price-button {
+  margin-right: 1.5rem;
+  margin-top: 2.8rem;
+  display: block;
+  text-align: right;
+}
+.price-button button {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+}
+.price-content {
+  padding: 3rem;
+  min-height: 55rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.price-content h4 {
+  font-size: 1.9rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+  margin-bottom: 3rem;
+}
+.price-content span {
+  font-size: 2rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.price-content ul {
+  min-height: 12rem;
+  padding: 0;
+}
+.price-content li {
+  margin: 0;
+  line-height: 1.7;
+  list-style-type: none;
+}
+.price-content li:before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/list-check.png) center no-repeat;
+  background-size: 100%;
+  margin-right: 1rem;
 }
 .arrow {
   position: absolute;
@@ -242,7 +309,11 @@ html textarea {
   margin-bottom: 2rem;
 }
 .window-header h4 {
+  font-size: 1.8rem;
   font-family: 'ProximaNovaBold', sans-serif;
+}
+.window-header p {
+  font-size: 1.6rem;
 }
 .window-content {
   padding: 2rem 4rem;
@@ -253,6 +324,9 @@ html textarea {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.window .inputs textarea {
+  padding: 0.5rem 1rem ;
 }
 @media (max-width: 991px) {
   .main {
@@ -277,8 +351,22 @@ html textarea {
     text-align: center;
     margin-top: -2rem;
   }
+  .advantages {
+    margin-bottom: 5rem;
+  }
   .advantages-header h2 {
     font-size: 3rem;
+  }
+  .price {
+    padding: 5rem 0;
+  }
+  .price-button {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .price-content {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 767px) {
@@ -310,9 +398,25 @@ html textarea {
   .advantages-header h2 {
     font-size: 2.6rem;
   }
+  .price-content {
+    min-height: 0;
+  }
+  .price-content ul {
+    min-height: 0;
+    margin-bottom: 3rem;
+  }
+  .price-button {
+    margin-right: 0;
+  }
 }
 @media (max-width: 350px) {
   .main-title h1 {
     font-size: 2.4rem;
+  }
+  .price-button {
+    margin-right: 0;
+  }
+  .price-button button {
+    padding: 1rem 2rem;
   }
 }
