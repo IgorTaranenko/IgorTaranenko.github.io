@@ -286,8 +286,98 @@ html{
 	}
 }
 
+// Экран с отзывами
+.feedbacks{
+	padding: 10rem 0;
+	background: url('../img/feedbacks/feedbacks-bg.png') center no-repeat;
+	background-position: cover;
+	background-size: 100%;
+	h2{
+		margin: 0;
+		padding: 0;
+		margin-bottom: 7rem;
+		text-align: center;	
+		font-size: 3.6rem;
+		.bold();
+	}
+	&-slider{
+		background-color: @light;
+		padding: 5rem;
+		box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+		p{
+			font-size: 1.5rem;
+		}
+		strong{
+			.bold();
+		}
+	}
+}
+.feedbacks-arrow{
+ border: none;
+ background-color: #49bf15;
+ color: @light;
+ width: 4rem;
+ height: 5rem;
+ .bold();
+ font-size: 2.5rem;
+}
+.feedbacks-arrow:hover{
+	background-color: #42a914;
+}
+.feedbacks-nextArrow{
+ position: absolute;
+ right: -4rem;
+ top: 50%;
+ transform: translateY(-50%);
+}
+.feedbacks-prewArrow{
+ position: absolute;
+ left: -4rem;
+ top: 50%;
+ transform: translateY(-50%);
+}
+.feedback{
+	margin-top: 4rem;
+	h4{
+		margin-bottom: 2rem;
+		font-size: 1.6rem;
+		.bold();
+	}
+	span{
+		position: relative;
+		display: block;
+  border: 2px solid #49bf15;
+  padding: 1rem;
+	}
+	span:before{
+		content: '';
+		position: absolute;
+		top: -2rem;
+		left: 6rem;
+		width: 2rem;
+		height: 2rem;
+		background-color: @light;
+		border: 2px solid #49bf15;
+		border-bottom: none;
+		border-top-right-radius: 100px;
+	}
+}
+.media{
+	img{
+		border-radius: none;
+		width: 5rem;
+		height: 5rem;
+	}
+	&-body{
+		h4{
+			margin-bottom: 3rem;
+			padding: 0;
+		}
+	}
+}
+
 // Всплывающие окна
-.arrow{
+.advantages-arrow{
 	position: absolute;
  z-index: 99;
  width: 3rem;
@@ -295,7 +385,7 @@ html{
  border: none;
  outline: none;
 }
-.prevArrow{
+.advantages-prevArrow{
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
@@ -303,7 +393,7 @@ html{
  background-size: 100%;
  
 }
-.nextArrow{
+.advantages-nextArrow{
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
