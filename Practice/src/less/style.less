@@ -52,6 +52,28 @@ html{
 	textarea{
 		border: 1px solid #dddddd;
 	}
+	input{
+			margin-bottom: 3rem;
+			display: block;
+			width: 100%;	
+			outline: none;
+		}
+	.inputs{
+			text-align: center;
+			input{
+				border: 1px solid #dddddd;
+				padding: 1.2rem;
+			}
+		}
+		label{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			background-color: #fff;
+			padding: 0 0.5rem;
+			font-size: 1.3rem;
+			.reg();
+		}
 }
 
 /* Styles */
@@ -102,26 +124,13 @@ html{
 		background-color: #fff;
 		margin-top: 3rem;	
 		padding: 4rem 4rem ;
-		label{
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			background-color: #fff;
-			padding: 0 0.5rem;
-			font-size: 1.3rem;
-			.reg();
-		}
+		
 		p{
 			font-size: 1.2rem;
 			text-align: center;
 			margin-bottom: 0;
 		}
-		input{
-			margin-bottom: 3rem;
-			display: block;
-			width: 100%;	
-			outline: none;
-		}
+		
 		button{
 			margin-bottom: 1.5rem;
 			width: 100%;
@@ -138,13 +147,7 @@ html{
 				font-size: 2rem;
 			}
 		}
-		.inputs{
-			text-align: center;
-			input{
-				border: 1px solid #dddddd;
-				padding: 1.2rem;
-			}
-		}
+		
 	}
 }
 
@@ -290,8 +293,8 @@ html{
 .feedbacks{
 	padding: 10rem 0;
 	background: url('../img/feedbacks/feedbacks-bg.png') center no-repeat;
-	background-position: cover;
-	background-size: 100%;
+	background-position: center;
+	background-size: cover;
 	h2{
 		margin: 0;
 		padding: 0;
@@ -311,6 +314,30 @@ html{
 			.bold();
 		}
 	}
+	&-form{
+		position: relative;	
+		text-align: center;	
+		h3{
+			margin-top: 8rem;	
+			margin-bottom: 4rem;	
+			.bold();
+			font-size: 2.2rem;	
+		}
+		&-button{
+			font-size: 1.6rem;	
+			padding: 2rem 3rem;
+		}
+	}
+	&-photo-slider{
+		margin-bottom: 3rem;
+	}
+}
+.hand{
+ position: absolute;	
+ top: 50%;
+ transform: translateX(-50%);	
+ left: 5%;	
+ max-width: 30rem;
 }
 .feedbacks-arrow{
  border: none;
@@ -457,6 +484,9 @@ html{
 }
 // Media запросы
 @media (max-width: 991px){
+	.hand{
+		display: none;
+	}
 	.main{
 		&-form{
 			margin-bottom: 3rem;
@@ -499,6 +529,28 @@ html{
 		}
 		&-content{
 			margin-bottom: 2rem;
+		}
+	}
+	.photorama{
+		img{
+			width: 100%;
+		}
+	}
+	.feedbacks{
+		padding: 5rem 0;
+		h2{
+			margin-bottom: 3rem;
+		}
+		&-form{
+			h3{
+				margin-top: 3rem;
+			}
+		}
+		&-nextArrow{
+			right: 0;
+		}
+		&-prewArrow{
+			left: 0;
 		}
 	}
 }
@@ -546,6 +598,16 @@ html{
 		}
 		&-button{
 			margin-right: 0;
+		}
+	}
+	.fotorama:focus{
+		outline: none;
+	}
+	.feedbacks{
+		.fotorama{
+			img{
+				width: 100%;
+			}
 		}
 	}
 }	

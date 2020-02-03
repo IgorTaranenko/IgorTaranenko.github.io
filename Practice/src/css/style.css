@@ -29,6 +29,29 @@ html textarea:focus {
 html textarea {
   border: 1px solid #dddddd;
 }
+html input {
+  margin-bottom: 3rem;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+html .inputs {
+  text-align: center;
+}
+html .inputs input {
+  border: 1px solid #dddddd;
+  padding: 1.2rem;
+}
+html label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  font-family: 'ProximaNovaReg', sans-serif;
+}
 /* Styles */
 .main {
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
@@ -74,26 +97,10 @@ html textarea {
   margin-top: 3rem;
   padding: 4rem 4rem ;
 }
-.main-form label {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  background-color: #fff;
-  padding: 0 0.5rem;
-  font-size: 1.3rem;
-  font-family: 'ProximaNovaReg', sans-serif;
-}
 .main-form p {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0;
-}
-.main-form input {
-  margin-bottom: 3rem;
-  display: block;
-  width: 100%;
-  outline: none;
 }
 .main-form button {
   margin-bottom: 1.5rem;
@@ -110,13 +117,6 @@ html textarea {
 .main-form h2 strong {
   font-family: 'ProximaNovaBold', sans-serif;
   font-size: 2rem;
-}
-.main-form .inputs {
-  text-align: center;
-}
-.main-form .inputs input {
-  border: 1px solid #dddddd;
-  padding: 1.2rem;
 }
 .header {
   height: 7rem;
@@ -253,8 +253,8 @@ html textarea {
 .feedbacks {
   padding: 10rem 0;
   background: url('../img/feedbacks/feedbacks-bg.png') center no-repeat;
-  background-position: cover;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
 }
 .feedbacks h2 {
   margin: 0;
@@ -275,6 +275,31 @@ html textarea {
 }
 .feedbacks-slider strong {
   font-family: 'ProximaNovaBold', sans-serif;
+}
+.feedbacks-form {
+  position: relative;
+  text-align: center;
+}
+.feedbacks-form h3 {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 2.2rem;
+}
+.feedbacks-form-button {
+  font-size: 1.6rem;
+  padding: 2rem 3rem;
+}
+.feedbacks-photo-slider {
+  margin-bottom: 3rem;
+}
+.hand {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 5%;
+  max-width: 30rem;
 }
 .feedbacks-arrow {
   border: none;
@@ -416,6 +441,9 @@ html textarea {
   padding: 0.5rem 1rem ;
 }
 @media (max-width: 991px) {
+  .hand {
+    display: none;
+  }
   .main {
     margin-bottom: 2rem;
   }
@@ -454,6 +482,24 @@ html textarea {
   }
   .price-content {
     margin-bottom: 2rem;
+  }
+  .photorama img {
+    width: 100%;
+  }
+  .feedbacks {
+    padding: 5rem 0;
+  }
+  .feedbacks h2 {
+    margin-bottom: 3rem;
+  }
+  .feedbacks-form h3 {
+    margin-top: 3rem;
+  }
+  .feedbacks-nextArrow {
+    right: 0;
+  }
+  .feedbacks-prewArrow {
+    left: 0;
   }
 }
 @media (max-width: 767px) {
@@ -494,6 +540,12 @@ html textarea {
   }
   .price-button {
     margin-right: 0;
+  }
+  .fotorama:focus {
+    outline: none;
+  }
+  .feedbacks .fotorama img {
+    width: 100%;
   }
 }
 @media (max-width: 350px) {
