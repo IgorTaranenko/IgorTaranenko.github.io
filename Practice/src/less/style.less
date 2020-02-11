@@ -36,12 +36,36 @@
 @icon-color: #70c849;
 @light: #fff;
 @green: #7bb442;
+@dark-green: #358015;
 
 /* Basic settings */
 
 html{
+	section{
+		padding: 10rem 0;
+	}
+	h2, h3, h4, h1{
+		.bold();
+	}
+	.section-header{
+		text-align: center;
+		h2{
+			font-size: 3.5rem;
+		}
+	}
 	button:focus{
 		outline: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+	 color: @text-color;
+	}
+	a:visited{
+		text-decoration: none;
+	 color: @text-color;
 	}
 	font-size: 10px;
 	.reg();
@@ -74,6 +98,9 @@ html{
 			font-size: 1.3rem;
 			.reg();
 		}
+		.slick-slide:focus{
+			outline: none;
+		}
 }
 
 /* Styles */
@@ -84,11 +111,9 @@ html{
  background: #fff url(../img/main-bg.jpg) center center no-repeat;
  background-size: cover;
  padding: 3rem 0	;
- margin-bottom: 10rem;
 	&-title	{
 		h1{
 		margin-bottom: 4rem;
-		.bold();
 		font-size: 3.7rem;
 		color: @text-color;
 		text-transform: uppercase;
@@ -190,14 +215,8 @@ html{
 // Настройка экрана с преимуществами
 
 .advantages{
-	margin-bottom: 10rem;
  &-header{
  	margin-bottom: 8rem;
-		text-align: center;
-		h2{
-			.bold();
-			font-size: 3.7rem;
-		}
 	}		
 }
 .advantage{
@@ -210,7 +229,6 @@ html{
 	text-align: center;
 	h3{
 		font-size: 2rem;
-		.bold();
 	}
 	p{
 		margin-top: 3rem;
@@ -225,14 +243,11 @@ html{
 // Экран с ценами
 
 .price{
- padding: 10rem 0;
 	&-header{
+		margin-bottom: 5.5rem;
 		color: @light;
-		text-align: center;
 		h2{
 			margin-bottom: 3rem;
-			font-size: 3.6rem;
-			.bold();
 		}
 		p{
 			font-size: 1.8rem;
@@ -245,7 +260,6 @@ html{
 		margin-bottom: 1rem;
 	}
 	&-button{
-		margin-right: 1.5rem;
 		margin-top: 2.8rem;
 		display: block;
 		text-align: right;
@@ -261,7 +275,6 @@ html{
 		text-align: center;
 		h4{
 			font-size: 1.9rem;
-			.bold();
 			margin-bottom: 3rem;
 		}
 		span{
@@ -291,18 +304,23 @@ html{
 
 // Экран с отзывами
 .feedbacks{
-	padding: 10rem 0;
+	padding-top: 7rem;
 	background: url('../img/feedbacks/feedbacks-bg.png') center no-repeat;
 	background-position: center;
 	background-size: cover;
-	h2{
-		margin: 0;
-		padding: 0;
+	&-header{
 		margin-bottom: 7rem;
-		text-align: center;	
-		font-size: 3.6rem;
-		.bold();
+		h2{
+		 margin: 0;
+			padding: 0;
+		}
 	}
+	h2{
+			margin: 0;
+			padding: 0;
+			text-align: center;	
+			font-size: 3.6rem;
+		}
 	&-slider{
 		background-color: @light;
 		padding: 5rem;
@@ -334,7 +352,7 @@ html{
 }
 .hand{
  position: absolute;	
- top: 50%;
+ bottom: -10rem;
  transform: translateX(-50%);	
  left: 5%;	
  max-width: 30rem;
@@ -368,7 +386,6 @@ html{
 	h4{
 		margin-bottom: 2rem;
 		font-size: 1.6rem;
-		.bold();
 	}
 	span{
 		position: relative;
@@ -402,6 +419,161 @@ html{
 		}
 	}
 }
+
+// Схема работы
+
+ .scheme{
+ 	position: relative;
+ 	padding: 10rem 0;
+ 	padding-bottom: 0;
+ 	&-header{	
+ 		margin-bottom: 7rem;
+ 		h2{
+ 			margin-bottom: 3rem;
+ 		}
+ 		p{
+ 			font-size: 1.5rem;
+ 		}
+ 	}
+ 	&-box{
+ 		min-height: 30rem;
+ 		h3{
+ 			font-size: 2rem;
+ 		}
+ 		p{
+ 			font-size: 1.5rem;
+ 		}
+ 	}
+ 	&-hand{
+ 		position: absolute;
+ 		right: 0;
+   bottom: 0rem;
+   img{
+   	max-width: 58rem;
+   }
+ 	}
+ }
+ // Все включено
+ .allInclusive{
+ 	padding: 10rem 0;
+ 	background-color: #f5f5f5;
+ 	&-header{
+ 		h2{
+ 			font-size: 4rem;	
+ 			color: @dark-green;
+ 			margin-bottom: 3rem;	
+ 		}
+ 		p{
+ 			font-size: 1.6rem;	
+ 			margin-bottom: 5rem;	
+ 		}
+ 	}
+ 	.circle{
+ 		display: inline-block;
+ 		width: 100%;
+ 		height: 100%;
+ 		background-color: @dark-green;
+ 		border-radius: 50%;
+ 		&-border{
+ 			padding: 0.3rem;
+ 			display: inline-block;
+ 			width: 5rem;
+ 			height: 5rem;
+ 			border-radius: 50%;
+ 			border: 2px solid @dark-green;
+ 			text-align: center;
+ 			line-height: 4rem;
+ 			font-size: 1.8rem;
+ 			.bold();
+ 			color: @light;
+ 		}
+ 	}
+ 	.media{
+ 		min-height: 10rem;
+ 		&-body{
+ 			h4{
+ 				font-size: 1.6rem;
+ 				margin-bottom: 0;
+ 			}
+ 			p{
+ 				font-size: 1.2rem;
+ 			}
+ 		}
+ 	}
+ }
+
+ // Мы развеем все опасения
+ .problems{
+ 	position: relative;	
+ 	padding-top: 7rem;
+ 	&-header{
+ 		margin-bottom: 7rem;
+ 	}
+ 	ul{
+ 		padding: 0;
+ 	}
+ 	li{
+ 	 list-style-type: none;
+ 	 line-height: 	1,7;
+ 	 font-size: 1.4rem;	
+ 	}
+ 	li:before{
+ 		position: absolute;
+ 		left: -3rem;	
+ 		top: 50%;
+ 		transform: translateY(-50%);
+ 		content: '';
+ 		display: inline-block;	
+ 		width: 2rem;	
+ 		height: 2rem;	
+ 	}
+ 	&-block{
+ 		min-height: 36rem;	
+ 		border: 3px solid #e8e8e8;
+ 		padding: 2rem 4rem;
+ 		padding-bottom: 2rem;
+ 		h3{
+ 			margin-bottom: 3rem;	
+ 			color: #aaaaaa;
+ 		}	
+ 		li{
+ 			margin-left: 3rem;	
+ 			position: relative;	
+ 			margin-bottom: 4rem;	
+ 		}
+ 		li:before{
+ 	  background: url(../img/Problems/problem.png) center no-repeat;
+ 	  background-size: 100%;	
+ 	 }
+ 	}
+ 	&-solution-block{
+ 		min-height: 36rem;	
+ 		border: 3px solid @dark-green;
+ 		padding: 2rem 4rem;
+ 		padding-bottom: 2rem;	
+ 		h3{
+ 			margin-bottom: 3rem;	
+ 		}
+ 		li{
+ 			margin-bottom: 2rem;	
+ 			margin-left: 3rem;	
+ 			position: relative;	
+ 			line-height: 1.4;	
+ 		}
+ 		li:before{
+ 			background: url(../img/Problems/solution.png) center no-repeat;
+ 			background-color: 100%;	
+ 		}
+ 	}
+ 	.woman{
+ 		position: absolute;	
+ 		left: 50%;	
+ 		transform: translateX(-50%);
+ 		bottom: 0;
+ 		height: 46rem;
+ 	}
+ }
+
 
 // Всплывающие окна
 .advantages-arrow{
@@ -460,7 +632,6 @@ html{
 	&-header{
 		h4{
 			font-size: 1.8rem;
-			.bold();
 		}
 		p{
 			font-size: 1.6rem;
@@ -529,6 +700,10 @@ html{
 		}
 		&-content{
 			margin-bottom: 2rem;
+			ul{
+				min-height: auto;
+				margin-bottom: 2rem;
+			}
 		}
 	}
 	.photorama{
@@ -553,7 +728,44 @@ html{
 			left: 0;
 		}
 	}
+	.scheme{
+		padding-top: 5rem;
+		&-box{
+			text-align: center;
+			min-height: auto;
+			margin-bottom: 3rem;
+		}
+		&-hand{
+			display: none;
+		}
+	}
+	.problems{
+		&-block{
+			min-height: auto;
+			margin-bottom: 3rem;
+			h3{
+				text-align: center;
+			}
+			li{
+				margin-bottom: 2rem;
+			}
+		}
+		&-solution-block{
+			min-height: auto;
+			h3{
+				text-align: center;
+			}
+			li{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.woman{
+		display: none;
+	}
 }
+
+
 
 @media (max-width: 767px){
 	.main{
