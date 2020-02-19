@@ -658,6 +658,9 @@ html .slick-slide:focus {
   padding: 0;
   margin: 0;
 }
+.window-content {
+  margin-top: 2rem;
+}
 .window-close {
   position: absolute;
   text-align: center;
@@ -852,6 +855,12 @@ html .slick-slide:focus {
   .feedbacks .fotorama img {
     width: 100%;
   }
+  .window-close {
+    top: -4rem;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
   .window-content {
     top: 5%;
     height: 90%;
@@ -859,9 +868,6 @@ html .slick-slide:focus {
   .window-content button {
     padding: 1rem;
     font-size: 1.4rem;
-  }
-  .window-content textarea {
-    height: 8rem;
   }
 }
 @media (max-width: 350px) {

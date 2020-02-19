@@ -724,6 +724,9 @@ html{
 		padding: 0;
 		margin: 0;
 	}
+	&-content{
+		margin-top: 2rem;
+	}
 	&-close{
 		position: absolute;
 		text-align: center;
@@ -945,6 +948,11 @@ html{
 		}
 	}
 	.window{
+		&-close{
+			top: -4rem;
+			right: 50%;
+			transform: translateX(50%);
+		}
 		&-content{
 			top: 5%;
 			height: 90%;
@@ -953,7 +961,7 @@ html{
 				font-size: 1.4rem;
 			}
 			textarea{
-				height: 8rem;
+				
 			}
 		}
 	}
