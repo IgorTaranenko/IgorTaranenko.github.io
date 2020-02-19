@@ -18,7 +18,6 @@
 html {
   font-size: 10px;
   font-family: 'ProximaNovaReg', sans-serif;
-  color: #1a1820;
 }
 html section {
   padding: 10rem 0;
@@ -29,12 +28,6 @@ html h4,
 html h1 {
   font-family: 'ProximaNovaBold', sans-serif;
 }
-html .section-header {
-  text-align: center;
-}
-html .section-header h2 {
-  font-size: 3.5rem;
-}
 html button:focus {
   outline: none;
 }
@@ -43,11 +36,9 @@ html a {
 }
 html a:hover {
   text-decoration: none;
-  color: #1a1820;
 }
 html a:visited {
   text-decoration: none;
-  color: #1a1820;
 }
 html textarea:focus {
   outline: none;
@@ -60,13 +51,6 @@ html input {
   display: block;
   width: 100%;
   outline: none;
-}
-html .inputs {
-  text-align: center;
-}
-html .inputs input {
-  border: 1px solid #dddddd;
-  padding: 1.2rem;
 }
 html label {
   position: absolute;
@@ -81,13 +65,51 @@ html label {
 html .slick-slide:focus {
   outline: none;
 }
+.section-header {
+  text-align: center;
+}
+.section-header h2 {
+  font-size: 3.5rem;
+}
+.inputs {
+  text-align: center;
+}
+.inputs input {
+  border: 1px solid #dddddd;
+  padding: 1.2rem;
+}
+.contact-form {
+  background-color: #fff;
+  padding: 4rem 4rem;
+}
+.contact-form p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+.contact-form button {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 2rem;
+}
+.contact-form h2 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.contact-form h2 strong {
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 2rem;
+}
 /* Styles */
 .main {
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
   background-size: cover;
-  padding: 3rem 0	;
+  padding: 5rem 0	;
 }
 .main-title h1 {
+  margin-top: 0;
   margin-bottom: 4rem;
   font-size: 3.7rem;
   color: #1a1820;
@@ -119,35 +141,16 @@ html .slick-slide:focus {
 .main-title .greentitle span strong {
   font-size: 3rem;
 }
-.main-form {
-  background-color: #fff;
-  margin-top: 3rem;
-  padding: 4rem 4rem ;
-}
-.main-form p {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 0;
-}
-.main-form button {
-  margin-bottom: 1.5rem;
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.6rem;
-}
-.main-form h2 {
-  margin-top: 0;
-  margin-bottom: 4rem;
-  font-size: 1.8rem;
-  text-align: center;
-}
-.main-form h2 strong {
-  font-family: 'ProximaNovaBold', sans-serif;
-  font-size: 2rem;
-}
 .header {
   height: 7rem;
   margin-bottom: 7rem;
+}
+.header a:hover {
+  color: #1a1820;
+}
+.header a:visited {
+  color: #1a1820;
+  text-decoration: none;
 }
 .wrap {
   display: table;
@@ -525,6 +528,96 @@ html .slick-slide:focus {
   bottom: 0;
   height: 46rem;
 }
+.materials {
+  background: url(../img/Materials/bg.png) center no-repeat;
+  background-size: cover;
+}
+.materials-header {
+  margin-bottom: 8rem;
+}
+.materials-header h2 {
+  margin-bottom: 3rem;
+}
+.materials-block {
+  text-align: center;
+}
+.materials-block img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.materials-block h4 {
+  font-size: 2rem;
+}
+.materials-block-title {
+  display: inline-block;
+  min-height: 10rem;
+}
+.materials-block-title p {
+  display: block;
+  font-size: 1.8rem;
+}
+.materials-block-title-green {
+  font-size: 1.6rem;
+  color: #6ba253;
+}
+.materials-footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+.materials-footer a:hover {
+  color: #509134;
+}
+.materials-footer a:visited {
+  color: #509134;
+}
+.materials-footer-link {
+  color: #509134;
+}
+.ourWork {
+  background: url(../img/ourWork-bg.png) left 45% top no-repeat;
+  background-size: cover;
+}
+.ourWork-header h2 {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+.ourWork-header p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.ourWork-form-button {
+  font-size: 1.5rem;
+}
+.addServices {
+  background: url(../img/prices-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.addServices-header h2 {
+  color: #ffffff;
+  margin-bottom: 5rem;
+}
+.addServices-header p {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 6rem;
+}
+.addServices-block {
+  text-align: center;
+}
+.addServices-block img {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 22rem;
+}
+.addServices-block h4 {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+.addServices-block button {
+  padding: 1rem 3rem;
+  font-family: 'ProximaNovaBold', sans-serif;
+}
 .advantages-arrow {
   position: absolute;
   z-index: 99;
@@ -603,11 +696,16 @@ html .slick-slide:focus {
   padding: 0.5rem 1rem ;
 }
 @media (max-width: 991px) {
+  .allInclusive,
+  .materials,
+  .problems,
+  .scheme,
+  .ourWork,
+  .addServices {
+    padding: 5rem 0;
+  }
   .hand {
     display: none;
-  }
-  .main {
-    margin-bottom: 2rem;
   }
   .main-form {
     margin-bottom: 3rem;
@@ -626,10 +724,9 @@ html .slick-slide:focus {
   }
   .main-title {
     text-align: center;
-    margin-top: -2rem;
   }
   .advantages {
-    margin-bottom: 5rem;
+    padding: 5rem 0;
   }
   .advantages-header h2 {
     font-size: 3rem;
@@ -700,14 +797,23 @@ html .slick-slide:focus {
   .woman {
     display: none;
   }
+  .ourWork {
+    background-position: left;
+  }
+  .ourWork-header {
+    text-align: center;
+  }
+  .ourWork-header h2 {
+    margin-bottom: 4rem;
+  }
+  .ourWork-header p {
+    margin-bottom: 3rem;
+  }
+  .addServices-block {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 767px) {
-  .main {
-    margin-bottom: 2rem;
-  }
-  .main-form {
-    margin-bottom: 2rem;
-  }
   .main-title h1 {
     font-size: 2.8rem;
   }
@@ -745,6 +851,17 @@ html .slick-slide:focus {
   }
   .feedbacks .fotorama img {
     width: 100%;
+  }
+  .window-content {
+    top: 5%;
+    height: 90%;
+  }
+  .window-content button {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  .window-content textarea {
+    height: 8rem;
   }
 }
 @media (max-width: 350px) {

@@ -47,12 +47,7 @@ html{
 	h2, h3, h4, h1{
 		.bold();
 	}
-	.section-header{
-		text-align: center;
-		h2{
-			font-size: 3.5rem;
-		}
-	}
+	
 	button:focus{
 		outline: none;
 	}
@@ -61,15 +56,12 @@ html{
 	}
 	a:hover{
 		text-decoration: none;
-	 color: @text-color;
 	}
 	a:visited{
 		text-decoration: none;
-	 color: @text-color;
 	}
 	font-size: 10px;
 	.reg();
-	color: @text-color;
 	textarea:focus{
 		outline: none;
 	}
@@ -82,13 +74,7 @@ html{
 			width: 100%;	
 			outline: none;
 		}
-	.inputs{
-			text-align: center;
-			input{
-				border: 1px solid #dddddd;
-				padding: 1.2rem;
-			}
-		}
+	
 		label{
 			position: absolute;
 			left: 50%;
@@ -102,6 +88,44 @@ html{
 			outline: none;
 		}
 }
+.section-header{
+		text-align: center;
+		h2{
+			font-size: 3.5rem;
+		}
+	}
+.inputs{
+	 text-align: center;
+		input{
+			border: 1px solid #dddddd;
+			padding: 1.2rem;
+		}
+	}
+	// Основная форма для сайта
+.contact-form{
+	background-color: #fff;
+	padding: 4rem 4rem;		
+	p{
+		font-size: 1.2rem;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	button{
+ 	margin-bottom: 1.5rem;
+		width: 100%;
+		padding: 2rem;
+	}
+	h2{
+		margin-top: 0;
+		margin-bottom: 4rem;
+		font-size: 1.8rem;
+		text-align: center;
+		strong{
+ 		.bold();
+ 		font-size: 2rem;
+		}
+	}	
+}
 
 /* Styles */
 
@@ -110,9 +134,10 @@ html{
 .main{
  background: #fff url(../img/main-bg.jpg) center center no-repeat;
  background-size: cover;
- padding: 3rem 0	;
+ padding: 5rem 0	;
 	&-title	{
 		h1{
+		margin-top: 0;	
 		margin-bottom: 4rem;
 		font-size: 3.7rem;
 		color: @text-color;
@@ -145,40 +170,20 @@ html{
 		}
 	}
 }
-	&-form{
-		background-color: #fff;
-		margin-top: 3rem;	
-		padding: 4rem 4rem ;
-		
-		p{
-			font-size: 1.2rem;
-			text-align: center;
-			margin-bottom: 0;
-		}
-		
-		button{
-			margin-bottom: 1.5rem;
-			width: 100%;
-			padding: 2rem;
-			font-size: 1.6rem;
-		}
-		h2{
-			margin-top: 0;
-			margin-bottom: 4rem;
-			font-size: 1.8rem;
-			text-align: center;
-			strong{
-				.bold();
-				font-size: 2rem;
-			}
-		}
-		
-	}
 }
 
 .header{
 	height: 7rem;
 	margin-bottom: 7rem;
+	a{
+		&:hover{
+			color: @text-color;
+		}
+		&:visited{
+			color: @text-color;
+			text-decoration: none;
+		}
+	}
 }
 
 .wrap{
@@ -211,6 +216,7 @@ html{
 	height: 7rem;
 	line-height: 7rem;	
 }
+
 
 // Настройка экрана с преимуществами
 
@@ -574,8 +580,111 @@ html{
  	}
  }
 
+ // Materials
+ .materials{
+ 	background: url(../img/Materials/bg.png) center no-repeat;
+ 	background-size: cover;
+ 	&-header{
+ 		h2{
+ 		 margin-bottom: 3rem;	
+ 		}
+ 		margin-bottom: 8rem; 		
+ 	}
+  &-block{
+  	text-align: center;
+  	img{
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+  	h4{
+  		font-size: 2rem;
+  	}
+  	&-title{
+  		display: inline-block;
+  		min-height: 10rem;
+  		p{
+  			display: block;
+  			font-size: 1.8rem;
+  		}
+  		&-green{
+  			font-size: 1.6rem;
+  			color: #6ba253;
+  		}
+  	}
+  }
+  &-footer{
+  	a{
+  		&:hover{
+  			color: #509134;
+  		}
+  		&:visited{
+  			color: #509134;
+  		}
+  	}
+  	&-link{
+  		color: #509134;
+  	}
+  	margin-top: 4rem;
+  	text-align: center;
+  }
+ }
 
-// Всплывающие окна
+ .ourWork{
+ 	background: url(../img/ourWork-bg.png) left 45% top no-repeat;
+ 	background-size: cover;
+ 	&-header{
+ 		h2{
+ 			font-size: 4rem;
+ 			line-height: 1.3;
+ 		}
+ 		p{
+ 			font-size: 2rem;
+ 			line-height: 1.5;
+ 		}
+ 	}
+ 	&-form{
+ 		&-button{
+ 			font-size: 1.5rem;	
+ 		}
+ 	}
+ }
+
+// Дополнительные услуги
+.addServices{
+	// padding-top: 8rem;
+	background: url(../img/prices-bg.jpg) center no-repeat;
+	background-size: cover;
+	&-header{
+  h2{
+  	color: @light;
+  	margin-bottom: 5rem;
+  }
+  p{
+  	font-size: 2rem;
+  	color: @light;
+  	margin-bottom: 6rem;
+  }
+	}
+	&-block{
+		text-align: center;
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			max-height: 22rem;
+		}
+		h4{
+			margin: 2rem 0;
+			font-size: 1.8rem;
+			color: @light;
+		}
+		button{
+			padding: 1rem 3rem;
+			.bold();
+		}
+	}
+}
+
+// Стрелки слайдера
 .advantages-arrow{
 	position: absolute;
  z-index: 99;
@@ -599,6 +708,7 @@ html{
  background: url('../img/NextArr.png')  center no-repeat;
  background-size: 100%;
 }
+// Всплывающие окна
 .window{
 	display: none;
 	position: fixed;
@@ -655,6 +765,9 @@ html{
 }
 // Media запросы
 @media (max-width: 991px){
+	.allInclusive, .materials, .problems, .scheme, .ourWork, .addServices{
+  padding: 5rem 0;
+	}
 	.hand{
 		display: none;
 	}
@@ -662,7 +775,6 @@ html{
 		&-form{
 			margin-bottom: 3rem;
 		}
-		margin-bottom: 2rem;
 	}
 	.main-title{
 		h1{
@@ -681,10 +793,9 @@ html{
 	}
 	.main-title{
 		text-align: center;
-		margin-top: -2rem;
 	}
 	.advantages{
-		margin-bottom: 5rem;
+		padding: 5rem 0;
 	}
 	.advantages-header{
 		h2{
@@ -763,17 +874,28 @@ html{
 	.woman{
 		display: none;
 	}
+	.ourWork{
+		background-position: left;
+		&-header{
+			text-align: center;
+			h2{
+				margin-bottom: 4rem;
+			}
+			p{
+				margin-bottom: 3rem;
+			}
+		}
+	}	
+	.addServices{
+		&-block{
+			margin-bottom: 3rem;
+		}
+	}
 }
 
 
 
 @media (max-width: 767px){
-	.main{
-		&-form{
-			margin-bottom: 2rem;
-		}
-		margin-bottom: 2rem;
-	}
 	.main-title{
 		h1{
 			font-size: 2.8rem;
@@ -819,6 +941,19 @@ html{
 		.fotorama{
 			img{
 				width: 100%;
+			}
+		}
+	}
+	.window{
+		&-content{
+			top: 5%;
+			height: 90%;
+			button{
+				padding: 1rem;
+				font-size: 1.4rem;
+			}
+			textarea{
+				height: 8rem;
 			}
 		}
 	}
